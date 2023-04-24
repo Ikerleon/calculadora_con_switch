@@ -1,0 +1,57 @@
+/*body usado para la imagen de fondo y quitar el margen*/
+body{
+    margin: 0;
+    background-image: url(Imagenes/imagen.jpg);
+    background-repeat: no-repeat;
+}
+/*titulo de calculdora*/
+.titulo{
+    text-align: center;
+}
+/*calculador usada para crear el margen alrededor de la calculadora y los estilos*/
+.calculadora{
+    font-family: 'Playfair Display', serif;
+    background: #263044;
+    color: #f8f9fa;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: 2px solid #f8f9fa;
+}
+/*darle margen de abajo a las clases numero*/
+.numero{
+    margin-bottom: 30px;
+}
+/*darle margen de abajo a las clases operaciones*/
+.operaciones{
+    margin-bottom: 30px;
+}
+/*para poner en la parte de abajo los laber que estan dentro de la clase numero*/
+.numero label{
+    display: block;
+}
+/*para darke un ancho del 100% y un relleno interior de 10 px a los input de la clase numero*/
+.numero input{
+    width: 100%;
+    padding: 10px;
+}
+/*para darle un ancho de un 40% un rello interior de 5px y poner abajo el menu de opciones*/
+.operaciones select{
+    font-family: 'Playfair Display', serif;
+    width: 40%;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+}
+/*opciones de boton estilos etc*/
+.boton{
+    font-family: 'Playfair Display', serif;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border: none;
+}

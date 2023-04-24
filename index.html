@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--contenedor de calculadora-->
+    <div class="calculadora">
+        <!--la etiqueta form usada para guardar el formato de la calculadora-->
+        <form action="">
+            <h1 class="titulo"> Calculadora</h1>
+            <div class="numero">
+                <input type="number" id="num1">
+                <label class="1" for="num1">Primer numero</label>
+            </div>
+            <div class="numero">
+                <input type="number" id="num2">
+                <label class="2" for="num2">Segundo numero</label>
+            </div>
+            <!--en operaciones se genera un select para hacer un menu desplegable donde se elira lo que se desee hacer-->
+            <div class="operaciones">
+                <label for="operacion">Operacion:</label>
+                <select id="operacion">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicacion</option>
+                    <option value="division">Division</option>
+                    <option value="mod%">Mod(%)</option>
+                </select>
+            </div>
+            <!--boton usado para calcular-->
+            <button class="boton" type="button" onclick="calculadora()">Calcular</button>
+
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
